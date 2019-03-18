@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+//<span className="image main"><img src={pic01} alt="" /></span>
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
@@ -14,25 +14,63 @@ class Main extends React.Component {
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Intro</h2>
-          <span className="image main"><img src={pic01} alt="" /></span>
-          <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+          <h2 className="major">Welcome!</h2>
+          <p>I am a third year student studying in the Computer Programmer Analyst Program(T127) at George Brown College. The expected completion date of my studies will be April, 2019. I am currently looking for work opportunities and learning experiences relating to technology.</p>
+          <h2>Philosophy/Statement of Career Goal</h2>
+          <p>Technology is constantly growing so there is never a shortage of interesting things to learn. I thrive on making meaningful connections with people and producing a positive work experience with my skill set. The field of technology is vast and I am interested to see where it will take me. </p>
           {close}
         </article>
 
-        <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Work</h2>
+        <article id="resume" className={`${this.props.article === 'resume' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Hire Broke College Student</h2>
+          <h3>Resume</h3>
+          <p><a href='https://drive.google.com/open?id=1bsC9oMZ2WRFMahvRDqUhIBqAX-3teAs1'>Please view my resume here</a></p>
+          <h3>Cover Letter</h3>
+          <p><a href='https://drive.google.com/open?id=0ByxE1PYO2JbubkhQX0xtaUExZFE'>Please view my cover letter here</a></p>
+          
+          {close}
+        </article>
+
+        <article id="academic" className={`${this.props.article === 'academic' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Academics</h2>
           <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+          <h2>Transcript</h2>
+          <p>A link to my academic <a href='https://drive.google.com/open?id=14uCh94Hi81fI87zzmIIhiFhCoBnfsU3S  '>transcript</a></p>
+          <h2>Academic Work Samples</h2>
+          <p>Please refer to my Github for some work <a href='https://github.com/kevinly77'>samples</a></p>
+          <h2>Academic Awards</h2>
+          <p>Currently a GBC-T127 Honor List Student for 5 Semesters</p>
           {close}
         </article>
 
-        <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">About</h2>
-          <span className="image main"><img src={pic03} alt="" /></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+        <article id="capstone" className={`${this.props.article === 'capstone' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Palendar</h2>
+          <p>We as students have come to realize just how important communication and management skills are in order to become successful person, whether it be in education or the work environment.</p>
+          <p>At Palendar, we wanted to create a proudct that combines a simple calendar, a task manager, and a live chat into an all in one product. The goal of this project will be to increase efficiency and effectiveness of planning, sharing and communication regarding everyday tasks, and ultimately improving your quality of life.</p>
+          <p>The following are the process and relating documents that we have produced so far.</p>
+          <h2><a href='https://docs.google.com/document/d/1ZxA3IO1NWJS_17pEgTq2PWPqJmLMLwPKo-B9A_8wUlw/edit?usp=sharing'>Project Vision</a></h2>
+          <p></p>
+          <h2><a href='https://docs.google.com/document/d/1kA75YwvDBUO50amgNhddeCxKkTzhOU5HcMPQkREWju8/edit?usp=sharing'>Business Requirements</a></h2>
+          <p></p>
+          <h2><a href='https://docs.google.com/document/d/1QHeh01CkcbA_b4nmZ52z1v0e_8l9kwmr2wWdrXaa7z4/edit?usp=sharing'>Project Plan v1</a></h2>
+          <p></p>
+          <h2><a href='https://docs.google.com/document/d/1ygnmc8T3RHtKZ_E6-12T9tZKEoaGY6cMntcIc-R-TIo/edit?usp=sharing'>Project Plan v2</a></h2>
+          <p></p>
+          <h2><a href='https://docs.google.com/document/d/1guShPPBGxK4OsBikbSwdOpuH6kukP2V4ktjJUFpEJ9s/edit?usp=sharing'>Requirements Analysis and Design</a></h2>
+          <p></p>
+          <h2><a href='https://drive.google.com/file/d/18ICDrThtbiis5QwiI4rY4yu1KCHMAk5J/view?usp=sharing'>Wireframes</a></h2>
+          <p></p>
+          <h2><a href='https://docs.google.com/document/d/1DzDJXm0PlFRlnDSJtaEIgJuiv4CWb3XhV0myJu-FLE8/edit'>Status Report 1</a></h2>
+          <p></p>
+          <h2><a href='https://docs.google.com/document/d/1vIBGZA1OOrZml4HdPDO-vHZ2vKfh0qPZGAYoNTK4ZtM/edit?usp=sharing'>Status Report 2</a></h2>
+          <p></p>
+          <h2><a href='https://docs.google.com/document/d/1yzD_Vv7I0k4Sk_BSgOxbt-NclaO95SL84pw_ZZTaLQE/edit?usp=sharing'>Status Report 3</a></h2>
+          <p></p>
+          <h2><a href='https://docs.google.com/presentation/d/1iAGp6oKOheP45TQ3GyjC3KeNqWWWKHSzf9U6_4mT30g/edit?usp=sharing'>Project Proposal Presentation</a></h2>
+          <p></p>
+          <h2><a href='https://docs.google.com/presentation/d/1sx9uWfPSwTk3Wwm5DT_Q0MK81omShquGRH-1SNkdfPo/edit?usp=sharing'>Project Plan and Mockup Presentation</a></h2>
+          <p></p>
+          <h2><a href='https://docs.google.com/presentation/d/19dEemxeeV79qyOD1iVNlk1Bq44iUgd3DNafx1gXMpKw/edit?usp=sharing'>Project Implementation Presentation</a></h2>
           {close}
         </article>
 
@@ -57,10 +95,8 @@ class Main extends React.Component {
             </ul>
           </form>
           <ul className="icons">
-            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="#" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            <li><a href="https://www.linkedin.com/in/kevin-ly7/" className="icon fa-linkedin-square"><span className="label">Linkedin</span></a></li>
+            <li><a href="https://github.com/kevinly77" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
         </article>
