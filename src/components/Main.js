@@ -46,37 +46,69 @@ class Main extends React.Component {
         <article id="capstone" className={`${this.props.article === 'capstone' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Palendar</h2>
           <p>We as students have come to realize just how important communication and management skills are in order to become successful person, whether it be in education or the work environment.</p>
-          <p>At Palendar, we wanted to create a proudct that combines a simple calendar, a task manager, and a live chat into an all in one product. The goal of this project will be to increase efficiency and effectiveness of planning, sharing and communication regarding everyday tasks, and ultimately improving your quality of life.</p>
+          <p>At Palendar, we wanted to create a product that combines a simple calendar, a task manager, and a live chat into an all in one product. The goal of this project will be to increase efficiency and effectiveness of planning, sharing and communication regarding everyday tasks, and ultimately improving your quality of life.</p>
           <p>The following are the process and relating documents that we have produced so far.</p>
-          <h2><a href='https://docs.google.com/document/d/1ZxA3IO1NWJS_17pEgTq2PWPqJmLMLwPKo-B9A_8wUlw/edit?usp=sharing'>Project Vision</a></h2>
-          <p></p>
-          <h2><a href='https://docs.google.com/document/d/1kA75YwvDBUO50amgNhddeCxKkTzhOU5HcMPQkREWju8/edit?usp=sharing'>Business Requirements</a></h2>
-          <p></p>
-          <h2><a href='https://docs.google.com/document/d/1QHeh01CkcbA_b4nmZ52z1v0e_8l9kwmr2wWdrXaa7z4/edit?usp=sharing'>Project Plan v1</a></h2>
-          <p></p>
-          <h2><a href='https://docs.google.com/document/d/1ygnmc8T3RHtKZ_E6-12T9tZKEoaGY6cMntcIc-R-TIo/edit?usp=sharing'>Project Plan v2</a></h2>
-          <p></p>
-          <h2><a href='https://docs.google.com/document/d/1guShPPBGxK4OsBikbSwdOpuH6kukP2V4ktjJUFpEJ9s/edit?usp=sharing'>Requirements Analysis and Design</a></h2>
-          <p></p>
-          <h2><a href='https://drive.google.com/file/d/18ICDrThtbiis5QwiI4rY4yu1KCHMAk5J/view?usp=sharing'>Wireframes</a></h2>
-          <p></p>
-          <h2><a href='https://docs.google.com/document/d/1DzDJXm0PlFRlnDSJtaEIgJuiv4CWb3XhV0myJu-FLE8/edit'>Status Report 1</a></h2>
-          <p></p>
-          <h2><a href='https://docs.google.com/document/d/1vIBGZA1OOrZml4HdPDO-vHZ2vKfh0qPZGAYoNTK4ZtM/edit?usp=sharing'>Status Report 2</a></h2>
-          <p></p>
-          <h2><a href='https://docs.google.com/document/d/1yzD_Vv7I0k4Sk_BSgOxbt-NclaO95SL84pw_ZZTaLQE/edit?usp=sharing'>Status Report 3</a></h2>
-          <p></p>
-          <h2><a href='https://docs.google.com/presentation/d/1iAGp6oKOheP45TQ3GyjC3KeNqWWWKHSzf9U6_4mT30g/edit?usp=sharing'>Project Proposal Presentation</a></h2>
-          <p></p>
-          <h2><a href='https://docs.google.com/presentation/d/1sx9uWfPSwTk3Wwm5DT_Q0MK81omShquGRH-1SNkdfPo/edit?usp=sharing'>Project Plan and Mockup Presentation</a></h2>
-          <p></p>
-          <h2><a href='https://docs.google.com/presentation/d/19dEemxeeV79qyOD1iVNlk1Bq44iUgd3DNafx1gXMpKw/edit?usp=sharing'>Project Implementation Presentation</a></h2>
+          <p>Team size: 4 Members</p>
+          <p>
+            Technologies used:
+            <ul>
+              <li>React</li>
+              <li>GraphQL</li>
+              <li>NodeJs</li>
+              <li>TypeScript</li>
+              <li>Prisma</li>
+              <li>UIKit</li>
+              <li>MySQL</li>
+              <li>Axios</li>
+            </ul>
+          </p>
+
+          <ul>
+            <li>
+            <h2><a href='https://docs.google.com/document/d/1ZxA3IO1NWJS_17pEgTq2PWPqJmLMLwPKo-B9A_8wUlw/edit?usp=sharing'>Project Vision</a></h2>
+            </li>
+            <li>
+            <h2><a href='https://docs.google.com/document/d/1kA75YwvDBUO50amgNhddeCxKkTzhOU5HcMPQkREWju8/edit?usp=sharing'>Business Requirements</a></h2>
+            </li>
+            <li>
+            <h2><a href='https://docs.google.com/document/d/1QHeh01CkcbA_b4nmZ52z1v0e_8l9kwmr2wWdrXaa7z4/edit?usp=sharing'>Project Plan v1</a></h2>
+            </li>
+            <li>
+            <h2><a href='https://docs.google.com/document/d/1ygnmc8T3RHtKZ_E6-12T9tZKEoaGY6cMntcIc-R-TIo/edit?usp=sharing'>Project Plan v2</a></h2>
+            </li>
+            <li>
+            <h2><a href='https://docs.google.com/document/d/1guShPPBGxK4OsBikbSwdOpuH6kukP2V4ktjJUFpEJ9s/edit?usp=sharing'>Requirements Analysis and Design</a></h2>
+            </li>
+            <li>
+            <h2><a href='https://drive.google.com/file/d/18ICDrThtbiis5QwiI4rY4yu1KCHMAk5J/view?usp=sharing'>Wireframes</a></h2>
+            </li>
+            <li>
+            <h2><a href='https://docs.google.com/document/d/1DzDJXm0PlFRlnDSJtaEIgJuiv4CWb3XhV0myJu-FLE8/edit'>Status Report 1</a></h2>
+            </li>
+            <li>
+            <h2><a href='https://docs.google.com/document/d/1vIBGZA1OOrZml4HdPDO-vHZ2vKfh0qPZGAYoNTK4ZtM/edit?usp=sharing'>Status Report 2</a></h2>
+            </li>
+            <li>
+            <h2><a href='https://docs.google.com/document/d/1yzD_Vv7I0k4Sk_BSgOxbt-NclaO95SL84pw_ZZTaLQE/edit?usp=sharing'>Status Report 3</a></h2>
+            </li>
+            <li>
+            <h2><a href='https://docs.google.com/presentation/d/1iAGp6oKOheP45TQ3GyjC3KeNqWWWKHSzf9U6_4mT30g/edit?usp=sharing'>Project Proposal Presentation</a></h2>
+            </li>
+            <li>
+            <h2><a href='https://docs.google.com/presentation/d/1sx9uWfPSwTk3Wwm5DT_Q0MK81omShquGRH-1SNkdfPo/edit?usp=sharing'>Project Plan and Mockup Presentation</a></h2>
+            </li>
+            <li>
+            <h2><a href='https://docs.google.com/presentation/d/19dEemxeeV79qyOD1iVNlk1Bq44iUgd3DNafx1gXMpKw/edit?usp=sharing'>Project Implementation Presentation</a></h2>
+            </li>
+            
+          </ul>
+          
           {close}
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" action="mailto:kevinly7@hotmail.com" encType="text/plain">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
